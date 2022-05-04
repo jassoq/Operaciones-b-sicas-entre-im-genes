@@ -1,2 +1,2 @@
-# Operaciones-b-sicas-entre-im-genes
+# Operaciones Basicas Entre Imagenes
 Vision Por Computadora
