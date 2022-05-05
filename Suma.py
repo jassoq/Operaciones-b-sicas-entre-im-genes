@@ -1,4 +1,3 @@
-'''
 import cv2
 import numpy as np
 from ctypes import c_float
@@ -8,24 +7,24 @@ def norm(c_float):
     c_float = c_float / np.max(c_float)
     return c_float
 
-a = cv2.imread("IMG1.jpg")
-b = cv2.imread("IMG2.jpg")
-a_float = a.astype (np.int32)
-b_float = b.astype (np.int32)
+img1 = cv2.imread('IMG1.jpg')
+img2 = cv2.imread('IMG2.jpg')
+img1_float = img1.astype (np.int32)
+img2_float = img2.astype (np.int32)
 
-#SUMA
-suma = a_float + b_float
+
+suma = img1_float + img2_float
 suma = norm (suma)
 suma = suma * 255
-su = suma.astype(np.uint8)
-cv2.imshow("SUMA",su)
+s = suma.astype(np.uint8)
+cv2.imshow("SUMA",s)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
 
-'''
+''' Con funciones ya definidad
 
 
 import cv2
@@ -46,7 +45,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ###
-'''
+
 import cv2
 
 # donde estamos leyendo directamente en escala de grises al ubicar 0
